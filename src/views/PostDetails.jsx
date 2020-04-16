@@ -44,7 +44,7 @@ const PostDetails = () => {
     setSnackbarOpen(true)
   }
 
-  const {title, author, body, comments } = data.post || {} 
+  const {title, author, body, comments } = data ? data.post : {} 
 
   const transitionTime = 300
 
